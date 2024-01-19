@@ -1,0 +1,10 @@
+version: '3.8'
+name: spring-boot-jwt
+services:
+  spring-boot-jwt:
+    container_name: spring-boot-jwt
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5005:5005"
